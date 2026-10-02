@@ -32,6 +32,13 @@ flowchart TB
     CRON --> SCRIPT --> API
     SCRIPT -->|aucun caractere interdit| OK
     SCRIPT -->|detection| ISSUE
+
+    classDef c0 fill:#2563eb,stroke:#1e3a8a,stroke-width:2px,color:#ffffff
+    classDef c1 fill:#7c3aed,stroke:#4c1d95,stroke-width:2px,color:#ffffff
+    classDef c2 fill:#0891b2,stroke:#164e63,stroke-width:2px,color:#ffffff
+    class CRON c0
+    class SCRIPT c1
+    class API,OK,ISSUE c2
 ```
 
 ## Regles verifiees
